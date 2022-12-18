@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="icon" type = "image/x-icon" href="../photos/favicon.png">
+    <script src="../../js/login.js" defer charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!--   <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <title>Login and Signup</title>
+  </head>
+
+  <body>
+
+    <video src="./Login_video.mp4" loop muted plays-inline type='video/mp4' autoplay>
+
+    </video>
+
+    <section id = "Login-section">
+      <div class="logo-sec">
+      <div class="logo-box">
+      </div>
+    </div>
+
+      <div class="login">
+
+        <div class="middle-sec">
+
+         <div class="middle-sec-input-icon">
+
+           <input required type="text" placeholder="ACCOUNT NAME" class="input" name="l-name" value="" />
+
+           <i class="fa-solid fa-user"></i>
+
+         </div>
+
+          <div class="middle-sec-input-icon">
+            <input required type="password" name="l-pass" placeholder="PASSWORD" class = "input" value="" />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+
+          <div class="switch-sec">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <p>Remember Login</p>
+          </div>
+
+        </div>
+
+         <div class="lower-sec">
+
+    <button type="button" id="login" name="button"><p>LOGIN</p></button>
+
+    <div class="signup switch-sec">
+      <a id="signup" href="#">SIGNUP</a>
+      <a href="/terms">Terms and condition</a>
+    </div>
+  </div>
+      </div>
+
+    </section>
+
+    <section id="signup-section">
+
+      <div class="sign-top">
+        <ion-icon name="return-down-back-outline"></ion-icon>
+        <p id="return">Return</p>
+      </div>
+
+      <form>
+
+
+       <div class="sign-input">
+         <label for="name">ACCOUNT</label>
+         <input required type="text" name="name" value="" placeholder="Alphanumeric name 5 - 10 characters" />
+       </div>
+
+       <div class="sign-input margin">
+         <label for="name">PASSWORD</label>
+         <input required type="password" name="password" value="" placeholder="5-15 characters or number" />
+       </div>
+
+       <div class="sign-input margin">
+         <label for="name">Confirm password</label>
+         <input required type="text" name="c-password" value="" placeholder="5-15 characters or number" />
+       </div>
+       <div class="sign-input margin">
+         <label for="name">INVITATION CODE</label>
+         <input required type="number" name="inv-code" value="{{inv_code}}" placeholder="5-15 characters or number" />
+       </div>
+
+       <div class="sign-input margin">
+         <label for="name">contact details</label>
+         <input required type="number" name="inv-code" placeholder="+91" />
+       </div>
+
+
+       <div class="sign-input margin tc">
+         <input required type="checkbox" name="t&c" value="" />
+         <p>I am above 18 and I agree to the terms and condition</p>
+       </div>
+
+       <div class="sign-input margin " style="text-align : center">
+
+        <button id="signup_btn"> <p>Submit</p> </button>
+        <a href="/terms" style="color : white ; font-weight : 800 ; margin-top : 1rem;">Terms and Condition</a>
+
+       </div>
+
+     </form>
+
+
+    </section>
+
+  </body>
+</html>

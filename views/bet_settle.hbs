@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SETTLE BETS</title>
+    <script type="module" src="../js/settle_bets.js" defer charset="utf-8"></script>
+  <style>
+    *{
+      margin : 0;
+      padding : 0;
+      box-sizing: border-box;;
+    }
+    input{
+      margin : 0.25rem;
+      font-size: 1.2rem;
+    }
+    label{
+      margin-top : 1rem;
+    }
+    body{
+      background : #efefef;
+    }
+    body > div{
+      border : 1px solid black;
+      width: 100vw;
+      height : 100vh;
+      padding : 2rem 1rem;
+      border : 1px solid red;
+      background : #f9f9f9;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    body > div > div{
+      border : 2px solid blue;
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-top : 5rem;
+    }
+    body > p{
+      overflow: scroll;
+      padding : 2rem;
+      width: 100vw;
+      height : auto;
+      border : 2px solid green;
+    }
+    button{
+      width: 50%;
+      margin : 0 auto;
+      margin-top : 0.5rem;
+      border : none;
+      background : lime;
+      padding : 1rem 0.5rem;
+    }
+    .settle_withdrawal{
+      display: flex;
+      flex-direction: column;
+      margin-top : 3rem;
+    }
+    </style>
+
+  </head>
+
+  <body>
+   <p id="res_data"></p>
+   <div>
+    <div>
+      <label for="">ENTER THE LEAGUE ID : </label>
+      <input type="number" value="">
+      <button id="settle_bet" type="button" name="button">SETTLE</button>
+
+      <div class='settle_withdrawal'>
+        <h3>SETTLE WITHDRAWAL</h3>
+        <br>
+
+        <label for="">Enter the invitation code .</label>
+        <input class="withdrawal_inpt" type="number" name="" value="" />
+
+        <label for="">Enter the transaction id .</label>
+        <input class="withdrawal_inpt" type="text" name="" value="" />
+
+        <label for="">Enter the amount .</label>
+        <input class="withdrawal_inpt" type="number" name="" value="" />
+        <button id="settle_withdrawal"type="button" name="button">SETTLE</button>
+
+      </div>
+
+    </div>
+    <div>
+      <h2>GET THE DPOSIT DATA YOU ARE GOING TO SETTLE :</h2>
+
+      <label for="">AMOUNT Without any calculation : </label>
+      <input id="amount" type="number" name="" value="" />
+
+      <label for="">Transaction ID: </label>
+      <input id="transaction" type="text" name="" value="" />
+
+      <label for="">invitation code : </label>
+      <input id="invitation" type="number" name="" value="" />
+
+      <button style="background : yellow" id="get_deposit_data"type="button" name="button">GET DATA</button>
+      <button id="settle_deposit"type="button" name="button">SETTLE</button>
+
+      <br>
+      <h2>SHIT HAPPENED !!!!</h2>
+      <label for="">ENTER THE LEAGUE ID </label>
+      <input type="number" id="shit_league_id" name="" value="" />
+      <button type="button" id="shit_happened" name="button">FIX</button>
+    </div>
+    <div>
+      <br><br>
+      <hr>
+      <h2>VIRTUAL SETTLE !!!</h2>
+      <label for="">ENTER LEAGUE FOR VIRTUAL SETTLEMENT</label>
+      <input type="number" id="virtual_settle_league_id" name="" value="" />
+      <button type="button" id="virtual_settle" name="button">VIRTUAL SETTLE</button>
+
+      <br><br>
+      <hr><hr>
+      <h1>CANCEL WITHDRAWAL'S </h1>
+      <label for="">Enter the invitation code.</label>
+      <input type="number" id="WC_inv_code" name="" value="">
+
+      <label for="">Enter the transaction id.</label>
+      <input type="text" id="WC_transaction" name="" value="">
+
+      <label for="">Enter the Amount.</label>
+      <input type="number" id="WC_amount" name="" value="">
+
+      <button style="color : red" type="button" id="cancel_withdrawal" name="button">CANCEL WITHDRAWAL</button>
+
+    </div>
+   </div>
+   <div>
+     <div>
+       <h1>TEST SETTLE BETS</h1>
+       <label for="">enter the league id </label>
+       <input type="number" name="" id="test_settle_id" value="" />
+       <button type="button" id="test_settle_bet" name="button">test it</button>
+     </div>
+     <div>
+       <h2>null settlement</h2>
+       <label for="">ENTER THE LEAGUE ID</label>
+       <input id="null_league" type="number" name="" value="" />
+       <label for="">ENTER first</label>
+       <input id="null_first" type="number" name="" value="" />
+       <label for="">ENTER second</label>
+       <input id="null_second" type="number" name="" value="" />
+       <button type="button" id="null_btn" name="button">SETTLE BET</button>
+     </div>
+   </div>
+  </body>
+
+</html>
